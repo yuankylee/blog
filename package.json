@@ -1,0 +1,42 @@
+{
+  "name": "blog",
+  "description": "Emily's Blog",
+  "version": "1.0.0",
+  "author": "Emily <yuankylee@163.com>",
+  "dependencies": {
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-favicon": "^2.1.1",
+    "gatsby-plugin-glamor": "^1.6.13",
+    "gatsby-plugin-google-analytics": "^1.0.31",
+    "gatsby-plugin-gosquared": "^1.0.1",
+    "gatsby-plugin-nprogress": "^1.0.14",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-typography": "^1.7.18",
+    "gatsby-remark-copy-images": "^0.2.1",
+    "gatsby-remark-prismjs": "^2.0.2",
+    "gatsby-source-filesystem": "^1.5.35",
+    "gatsby-transformer-remark": "^1.7.41",
+    "glamorous": "^4.13.0",
+    "prismjs": "^1.14.0",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": ["gatsby", "blog"],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "dev": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,json,scss,css}": ["prettier --write", "git add"]
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.0",
+    "prettier": "1.12.1"
+  }
+}
